@@ -7,9 +7,9 @@ module.exports = {
   },
   dialect: process.env.DB_DIALECT || "mysql",
   timezone: "-03:00",
-  host: "localhost",
-  database: "versao_final",
-  username: "root",
-  password: "@senha.123",
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASS,
   logging: false
 };
